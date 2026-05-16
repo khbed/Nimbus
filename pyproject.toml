@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nimbus"
+version = "0.1.0"
+description = "Your AWS console, but you just talk to it."
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic",
+    "boto3",
+    "rich",
+]
+
+[project.scripts]
+nimbus = "nimbus.main:main"
